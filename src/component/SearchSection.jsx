@@ -47,7 +47,7 @@ function SearchSection() {
         watchValues:txtInput.current.value
       }
       
-      axios.post('https://abhayas-sde-test.herokuapp.com/addwatchlist',addwatchlist);
+      axios.post('https://mern-spa-app.herokuapp.com/addwatchlist',addwatchlist);
       
     
         }

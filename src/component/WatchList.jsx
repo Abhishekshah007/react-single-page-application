@@ -15,7 +15,7 @@ function WatchList() {
   
    const deleteNote=(id)=>{  
     console.log(id)
-    axios.delete(`https://abhayas-sde-test.herokuapp.com/removewatchlistvalue/${id}`)  
+    axios.delete(`https://mern-spa-app.herokuapp.com/removewatchlistvalue/${id}`)  
       .then(res => {  
         // console.log(res);  
         // console.log(res.data);  
