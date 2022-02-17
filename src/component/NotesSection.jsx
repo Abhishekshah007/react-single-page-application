@@ -29,7 +29,7 @@ function NotesSection() {
       desc: input.desc
     }
 
-    axios.post('http://localhost:3000/note', Note);
+    axios.post('https://abhayas-sde-test.herokuapp.com/note', Note);
     
     setInput({ title: '', desc: '' })
     ref.current.click()                             
@@ -60,7 +60,7 @@ function NotesSection() {
   }
   const updateNote= async (id,title,desc)=>{
 
-    const response = await fetch(`http://localhost/edit/${id}`,{
+    const response = await fetch(`https://abhayas-sde-test.herokuapp.com/edit/${id}`,{
       method:'PUT',
       headers:{
         'content-type':'application/json',
@@ -101,7 +101,7 @@ setNotes( newUpdateValue)
   // delete
   const deleteNote=(id)=>{  
     console.log(id)
-    axios.delete(`http://localhost:3000/remove/${id}`)  
+    axios.delete(`https://abhayas-sde-test.herokuapp.com/remove/${id}`)  
       .then(res => {  
         // console.log(res);  
         // console.log(res.data);  

@@ -47,7 +47,7 @@ function SearchSection() {
         watchValues:txtInput.current.value
       }
       
-      axios.post('http://localhost:3000/addwatchlist',addwatchlist);
+      axios.post('https://abhayas-sde-test.herokuapp.com/addwatchlist',addwatchlist);
       
     
         }

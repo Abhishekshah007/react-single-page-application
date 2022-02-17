@@ -26,7 +26,7 @@ const handelSubmit=()=>{
     rules:value.rules
   }
   
-  axios.post('http://localhost:3000/addrule',Rule);
+  axios.post('https://abhayas-sde-test.herokuapp.com/addrule',Rule);
   ref.current.click()
   cref.current.click()
   setValue({rules:''})
@@ -52,7 +52,7 @@ useEffect(() => {
 const deleteSelect = (id)=>{
 
       
-      axios.delete(`http://localhost:3000/removerules/${id}`)  
+      axios.delete(`https://abhayas-sde-test.herokuapp.com/removerules/${id}`)  
       .then(res => {  
         // console.log(res);  
         // console.log(res.data);  
